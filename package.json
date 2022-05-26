@@ -1,0 +1,25 @@
+{
+  "name": "open-gnss",
+  "version": "1.0.0",
+  "description": "gnss receiver utility",
+  "main": "index.js",
+  "author": "Ilya Vyalkov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  },
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  }
+}
