@@ -27,6 +27,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "serialport": "^10.4.0",
     "serve-spa": "^1.1.1"
   }
 }
